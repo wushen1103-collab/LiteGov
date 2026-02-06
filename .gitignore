@@ -1,0 +1,18 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+.idea/
+.vscode/
+
+# Large artifacts (keep out of git; download / regenerate instead)
+checkpoints/
+outputs/
+logs/
+runs/
+wandb/
+
+# Docking raw outputs (omitted from this GitHub release)
+docking/
+*.pdbqt
+*.log

@@ -1,0 +1,11 @@
+name: moler-env
+channels:
+  - rdkit
+  - conda-forge
+dependencies:
+  - pip
+  - python=3.10
+  - rdkit
+  - tensorflow<2.10
+  - pip:
+    - numpy

@@ -1,0 +1,16 @@
+filter:
+  drop_pains: true
+  sa_threshold: 4.0
+  deduplicate: true
+  valid_only: true
+score:
+  target_logp: 2.0
+  w_qed: 1.0
+  w_logp: 0.5
+  w_sa: 0.2
+  w_pains: 1.0
+selection:
+  topk: 100
+  accept_reject: false
+report:
+  compute_scaffold_diversity: true

@@ -1,0 +1,11 @@
+category,component,code,description
+Dataset,Docking targets,"1M17, 6LU7, CDK2, ERa, HIVPR",Protein targets used for docking-based evaluation.
+Dataset,GenMol training set,train_genmol,"Dataset used to train the GenMol generator (e.g., ChEMBL subset, N molecules)."
+Dataset,MoLeR training set,train_moler,Dataset used to train the MoLeR generator.
+Generator,GenMol,genmol,Base molecular generator; main model used in this work.
+Generator,MoLeR,moler,Alternative generator used to test transfer of governance effects.
+Governance,Heavy governance,heavy,HeavyGov: full governance stack with stronger but more expensive checks.
+Governance,Lite governance,lite,LiteGov: lightweight learned governance filter; main method.
+Governance,QED filter,qed,Post-hoc filtering/reranking based only on QED score.
+Governance,Raw,raw,No governance; direct samples from the generator.
+Governance,RuleKit,rulekit,Hand-crafted medicinal chemistry rules / structural alerts.
