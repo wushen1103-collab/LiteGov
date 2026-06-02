@@ -308,13 +308,13 @@ def update_pass_summary(summary_path: str, pass_dir: str) -> None:
     for idx, sa_mean in new_sa_means:
         df_sum.at[idx, "sa_mean"] = sa_mean
 
-    backup_path = summary_path + ".bak"
+    previous_path = summary_path + ".previous"
     os.makedirs(os.path.dirname(summary_path), exist_ok=True)
-    os.replace(summary_path, backup_path)
+    os.replace(summary_path, previous_path)
     df_sum.to_csv(summary_path, index=False)
 
     print(f"Updated sa_mean for pass rows in {summary_path}")
-    print(f"Backup of old summary written to {backup_path}")
+    print(f"Previous summary written to {previous_path}")
 
 
 def main() -> None:
